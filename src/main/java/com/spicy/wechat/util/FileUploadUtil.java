@@ -22,12 +22,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.spicy.wechat.common.FileResponse;
 
-/**
- * @Description: 文件上传Util
- * @date: 2016年10月12日 上午11:04:21
- * @author: zengt
- * @version: 1.0
- */
+
 public class FileUploadUtil {
     /**
      * @Description: TODO
@@ -35,7 +30,6 @@ public class FileUploadUtil {
      * @param targetPath 存放地址
      * @param prefix 重命名文件前缀 PC_21324346552.png
      * @return FileResponse
-     * @author: zengt
      * @throws IOException
      * @throws IllegalStateException
      * @date: 2016年10月12日 上午11:07:57
@@ -60,7 +54,6 @@ public class FileUploadUtil {
      * @param toDirName 要移动至的文件夹名称
      * @throws IOException
      * @date 2016年10月28日 上午11:04:57
-     * @author yangxu
      */
     public static void moveFiles(File tempDir, String toDirName) throws IOException {
         File[] files = tempDir.listFiles();
@@ -83,7 +76,6 @@ public class FileUploadUtil {
      * @param dir
      * @return
      * @date 2016年10月28日 下午12:57:07
-     * @author yangxu
      */
     public static boolean deleteDir(File dir) throws IOException {
         if (dir.isDirectory()) {
@@ -103,7 +95,6 @@ public class FileUploadUtil {
      * @param filePaths 多个文件路径
      * @return
      * @date 2016年12月28日
-     * @author mouxf
      */
     public static boolean deleteFiles(String[] filePaths) throws IOException{
         for(String filePath:filePaths){
@@ -123,7 +114,6 @@ public class FileUploadUtil {
      * @param filePaths 文件路径
      * @return
      * @date 2016年12月28日
-     * @author mouxf
      */
     public static boolean deleteFile(String filePath)throws IOException{
         File file = new File(filePath);
@@ -142,7 +132,6 @@ public class FileUploadUtil {
      * @param resultFileName
      * @return
      * @date 2016年11月4日 下午2:57:10
-     * @author yangxu
      */
     public static Set<String> ergodic(File file, Set<String> resultFileName) {
         File[] files = file.listFiles();
@@ -164,7 +153,6 @@ public class FileUploadUtil {
      * @param oldPath String 原文件路径 如：c:/fqf
      * @param newPath String 复制后路径 如：f:/fqf/ff
      * @return
-     * @author yangh
      */
     public static void copyFolder(String oldPath, String newPath) {
         try {
@@ -204,7 +192,6 @@ public class FileUploadUtil {
      * 解压文件到指定目录 解压后的文件名，和之前一致
      * @param zipFile 待解压的zip文件
      * @param descDir 指定目录
-     * @author yangh
      */
     public static String unZipFiles(File zipFile, String descDir) throws IOException {
         ZipFile zip = new ZipFile(zipFile, Charset.forName("GBK"));// 解决中文文件夹乱码
@@ -247,7 +234,6 @@ public class FileUploadUtil {
      * @param sourcePath 图片初始生成地址
      * @param toPath 图片要复制到的地方
      * @param fileName 新图片名（不包含后缀）
-     * @author yangh
      */
     @SuppressWarnings("resource")
     public static void copyToOtherPath(String sourcePath, String toPath, String fileName) {
@@ -272,7 +258,6 @@ public class FileUploadUtil {
      * @param filepath 文件所在目录
      * @param zippath 压缩后zip文件地址名称
      * @param dirFlag zip文件中第一层是否包含一级目录，true包含；false没有
-     * @author yangh
      */
     public static void zipMultiFile(String filepath, String zippath, boolean dirFlag) {
         try {
