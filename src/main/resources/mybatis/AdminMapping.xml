@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.spicy.wechat.admin.mapper.AdminMapper" >
+  <resultMap id="BaseResultMap" type="com.spicy.wechat.entity.Admin" >
+    <id column="id" property="id" />
+    <result column="username" property="username" />
+    <result column="login_ip" property="loginIp" />
+  </resultMap>
+  
+  <sql id="Base_Column_List" >
+    id, username, login_ip
+  </sql>
+  
+  <select id="getList" resultMap="BaseResultMap">
+  	select 
+  	<include refid="Base_Column_List" />
+  	from think_admin
+  	order by create_time desc
+     <!-- <if test="startNo != null">
+         LIMIT #{startNo},#{pageSize}
+     </if> -->
+  </select>
+  
+</mapper>
