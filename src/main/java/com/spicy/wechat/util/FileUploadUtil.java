@@ -301,7 +301,6 @@ public class FileUploadUtil {
     /**
      * 
      * @Description:文件下载Util
-     * @author gyl
      * @param request
      * @param response
      * @param storeName
