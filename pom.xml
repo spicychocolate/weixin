@@ -200,8 +200,8 @@
 					<artifactId>tomcat7-maven-plugin</artifactId>
 					<version>2.2</version>
 					<configuration>
-						<httpPort>80</httpPort>
-						<port>80</port>
+						<httpPort>88</httpPort>
+						<port>88</port>
 						<path>/</path>
 						<uriEncoding>UTF-8</uriEncoding>
 					</configuration>

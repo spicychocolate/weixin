@@ -54,7 +54,7 @@ public class WechatUtil {
 	private static final String APPSECRET = "04ae1a26f60964d961e0bc42252e5fa2";
 	
 	//动态网址
-	public final static String PROXYADDRESS = "http://www.cdhrsip.com/";
+	public final static String PROXYADDRESS = "http://spicy.tunnel.qydev.com/";
 
 	//获取ACCESS_TOKEN
 	private static final String ACCESS_TOKEN_URL = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET";
