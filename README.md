@@ -7,3 +7,10 @@ tips:搭建框架SSM
   * 扫码事件
   * 获取地理位置
   * 微信jssdk
+ 
+##### 部分效果图如下
+![](https://github.com/spicychocolate/weixin/raw/master/1.jpg)
+
+![](https://github.com/spicychocolate/weixin/raw/master/2.jpg)
+
+![](https://github.com/spicychocolate/weixin/raw/master/3.jpg)
